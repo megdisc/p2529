@@ -1,56 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Corporate Web System Loaded');
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
 
-    // Product Filtering Logic
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const productCards = document.querySelectorAll('.product-card');
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
 
-    if (filterButtons.length > 0 && productCards.length > 0) {
-        // Function to filter products
-        const filterProducts = (category) => {
-            // Update active button state
-            filterButtons.forEach(btn => {
-                if (btn.dataset.filter === category) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-
-            // Show/Hide products
-            productCards.forEach(card => {
-                const productCategory = card.dataset.category;
-                if (category === 'all' || productCategory === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        };
-
-        // Event listeners for buttons
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const filter = btn.dataset.filter;
-                filterProducts(filter);
-
-                // Update URL without reloading (optional, but good for UX)
-                const url = new URL(window.location);
-                url.searchParams.set('category', filter);
-                window.history.pushState({}, '', url);
-            });
-        });
-
-        // Check URL parameters on load
-        const urlParams = new URLSearchParams(window.location.search);
-        const categoryParam = urlParams.get('category');
-
-        if (categoryParam) {
-            // Validate if the category exists in our buttons to avoid errors
-            const validCategory = [...filterButtons].some(btn => btn.dataset.filter === categoryParam);
-            if (validCategory) {
-                filterProducts(categoryParam);
+            // Optional: Animate hamburger icon
+            const spans = mobileMenuBtn.querySelectorAll('span');
+            if (navLinks.classList.contains('active')) {
+                // Transform to X
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+            } else {
+                // Reset
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
             }
-        }
+        });
     }
 });
