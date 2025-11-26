@@ -199,7 +199,7 @@ header .container {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%);
 }
 
 .hero-content {
@@ -339,11 +339,17 @@ header .container {
 }
 
 .detail-image {
-    background-color: #e2e8f0;
-    height: 400px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 8px;
-    background-image: linear-gradient(45deg, #cbd5e1 25%, #e2e8f0 25%, #e2e8f0 50%, #cbd5e1 50%, #cbd5e1 75%, #e2e8f0 75%, #e2e8f0 100%);
-    background-size: 20px 20px;
+    overflow: hidden;
+    background-color: #e2e8f0;
+}
+
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .detail-info h1 {
