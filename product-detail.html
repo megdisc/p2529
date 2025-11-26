@@ -26,12 +26,17 @@
         }
 
         .detail-image {
-            background-color: #e2e8f0;
-            height: 400px;
+            width: 100%;
+            aspect-ratio: 1 / 1;
             border-radius: 8px;
-            /* Placeholder pattern */
-            background-image: linear-gradient(45deg, #cbd5e1 25%, #e2e8f0 25%, #e2e8f0 50%, #cbd5e1 50%, #cbd5e1 75%, #e2e8f0 75%, #e2e8f0 100%);
-            background-size: 20px 20px;
+            overflow: hidden;
+            background-color: #e2e8f0;
+        }
+
+        .detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .detail-info h1 {
@@ -108,7 +113,9 @@
     <section class="section" style="padding-top: 2rem;">
         <div class="container">
             <div class="product-detail-layout">
-                <div class="detail-image"></div>
+                <div class="detail-image">
+                    <img src="images/product-alpha.png" alt="産業用ロボットアーム Alpha">
+                </div>
                 <div class="detail-info">
                     <h1>産業用ロボットアーム Alpha</h1>
                     <p class="detail-desc">
@@ -156,7 +163,7 @@
             <div class="product-grid">
                 <!-- Product 2 -->
                 <div class="product-card">
-                    <div class="product-image"></div>
+                    <img src="images/product-beta.png" alt="精密加工機 Beta-X" class="product-image">
                     <div class="product-info">
                         <h3>精密加工機 Beta-X</h3>
                         <p>ミクロン単位の加工精度を誇るフラッグシップモデル。</p>
@@ -165,7 +172,7 @@
                 </div>
                 <!-- Product 3 -->
                 <div class="product-card">
-                    <div class="product-image"></div>
+                    <img src="images/product-iot.png" alt="IoTセンサーモジュール" class="product-image">
                     <div class="product-info">
                         <h3>IoTセンサーモジュール</h3>
                         <p>工場の稼働状況をリアルタイムに可視化するスマートセンサー。</p>
@@ -174,7 +181,7 @@
                 </div>
                 <!-- Product 4 -->
                 <div class="product-card">
-                    <div class="product-image"></div>
+                    <img src="images/product-agv.png" alt="自動搬送ロボット AGV-100" class="product-image">
                     <div class="product-info">
                         <h3>自動搬送ロボット AGV-100</h3>
                         <p>工場内の物流を効率化する自律走行型搬送ロボット。</p>

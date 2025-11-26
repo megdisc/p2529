@@ -184,7 +184,9 @@ header .container {
 .hero {
     position: relative;
     height: 600px;
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     display: flex;
     align-items: center;
@@ -295,10 +297,10 @@ header .container {
 }
 
 .product-image {
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     background-color: #cbd5e1;
-    background-image: linear-gradient(45deg, #cbd5e1 25%, #e2e8f0 25%, #e2e8f0 50%, #cbd5e1 50%, #cbd5e1 75%, #e2e8f0 75%, #e2e8f0 100%);
-    background-size: 20px 20px;
 }
 
 .product-info {
