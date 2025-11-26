@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製品情報 | 株式会社テックマニュファクチャリング</title>
+    <meta name="description" content="株式会社テックマニュファクチャリングの製品一覧ページです。産業用ロボット、精密加工機、IoTソリューションなど、幅広いラインナップをご紹介します。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-bar {
+            background-color: white;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 3rem;
+        }
+
+        .filter-list {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 99px;
+            border: 1px solid #cbd5e1;
+            background: white;
+            color: var(--color-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">TECH MFG.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="products.html" class="active" style="color: var(--color-accent);">製品情報</a></li>
+                    <li><a href="company.html">企業情報</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Products</h1>
+            <p>製品情報</p>
+        </div>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-list">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="robot">産業用ロボット</button>
+                <button class="filter-btn" data-filter="precision">精密加工機</button>
+                <button class="filter-btn" data-filter="iot">IoTソリューション</button>
+                <button class="filter-btn" data-filter="other">その他</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="robot">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3>産業用ロボットアーム Alpha</h3>
+                        <p>高精度・高速動作を実現した次世代ロボットアーム。</p>
+                        <a href="product-detail.html" class="text-link">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="precision">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3>精密加工機 Beta-X</h3>
+                        <p>ミクロン単位の加工精度を誇るフラッグシップモデル。</p>
+                        <a href="product-detail.html" class="text-link">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="iot">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3>IoTセンサーモジュール</h3>
+                        <p>工場の稼働状況をリアルタイムに可視化するスマートセンサー。</p>
+                        <a href="product-detail.html" class="text-link">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="robot">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3>自動搬送ロボット AGV-100</h3>
+                        <p>工場内の物流を効率化する自律走行型搬送ロボット。</p>
+                        <a href="product-detail.html" class="text-link">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="precision">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3>3Dプリンター Pro-M</h3>
+                        <p>金属造形に対応した産業用ハイエンド3Dプリンター。</p>
+                        <a href="product-detail.html" class="text-link">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="iot">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3>生産管理システム MES-Cloud</h3>
+                        <p>クラウドベースで導入が容易な次世代生産管理システム。</p>
+                        <a href="product-detail.html" class="text-link">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><a href="index.html" style="color: inherit; text-decoration: none;"></a>株式会社テックマニュファクチャリング</a></h4>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">
+                        〒100-0000<br>
+                        東京都千代田区大手町1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="products.html" style="color: inherit; text-decoration: none;">製品情報</a></h4>
+                    <ul>
+                        <li><a href="products.html?category=robot">産業用ロボット</a></li>
+                        <li><a href="products.html?category=precision">精密加工機</a></li>
+                        <li><a href="products.html?category=iot">IoTソリューション</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="company.html" style="color: inherit; text-decoration: none;">企業情報</a></h4>
+                    <ul>
+                        <li><a href="company.html#overview">会社概要</a></li>
+                        <li><a href="company.html#greeting">代表挨拶</a></li>
+                        <li><a href="company.html#history">沿革</a></li>
+                        <li><a href="company.html#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html" style="color: inherit; text-decoration: none;">お問い合わせ</a></h4>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li><a href="faq.html">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Tech Manufacturing Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

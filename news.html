@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ニュース | 株式会社テックマニュファクチャリング</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .news-list-page {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 4rem;
+        }
+
+        .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            color: var(--color-secondary);
+            transition: all 0.2s;
+        }
+
+        .page-link:hover,
+        .page-link.active {
+            background-color: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">TECH MFG.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="products.html">製品情報</a></li>
+                    <li><a href="company.html">企業情報</a></li>
+                    <li><a href="news.html" class="active" style="color: var(--color-accent);">ニュース</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>News</h1>
+            <p>ニュース</p>
+        </div>
+    </div>
+
+    <!-- News List -->
+    <section class="section">
+        <div class="container news-list-page">
+            <div class="news-list">
+                <article class="news-item">
+                    <span class="news-date">2024.11.26</span>
+                    <span class="news-category">お知らせ</span>
+                    <a href="#" class="news-title">コーポレートサイトをリニューアルいたしました</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-date">2024.11.15</span>
+                    <span class="news-category">製品情報</span>
+                    <a href="#" class="news-title">新製品「TM-X2000」の販売を開始しました</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-date">2024.10.30</span>
+                    <span class="news-category">展示会</span>
+                    <a href="#" class="news-title">「国際製造業展2024」に出展いたします</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-date">2024.10.01</span>
+                    <span class="news-category">お知らせ</span>
+                    <a href="#" class="news-title">本社移転のお知らせ</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-date">2024.09.15</span>
+                    <span class="news-category">技術情報</span>
+                    <a href="#" class="news-title">次世代ロボット制御技術に関する論文が学会誌に掲載されました</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-date">2024.08.20</span>
+                    <span class="news-category">採用情報</span>
+                    <a href="recruit.html" class="news-title">2026年度新卒採用のエントリー受付を開始しました</a>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">&gt;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><a href="index.html" style="color: inherit; text-decoration: none;"></a>株式会社テックマニュファクチャリング</a></h4>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">
+                        〒100-0000<br>
+                        東京都千代田区大手町1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="products.html" style="color: inherit; text-decoration: none;">製品情報</a></h4>
+                    <ul>
+                        <li><a href="products.html?category=robot">産業用ロボット</a></li>
+                        <li><a href="products.html?category=precision">精密加工機</a></li>
+                        <li><a href="products.html?category=iot">IoTソリューション</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="company.html" style="color: inherit; text-decoration: none;">企業情報</a></h4>
+                    <ul>
+                        <li><a href="company.html#overview">会社概要</a></li>
+                        <li><a href="company.html#greeting">代表挨拶</a></li>
+                        <li><a href="company.html#history">沿革</a></li>
+                        <li><a href="company.html#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html" style="color: inherit; text-decoration: none;">お問い合わせ</a></h4>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li><a href="faq.html">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Tech Manufacturing Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

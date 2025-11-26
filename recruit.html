@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>採用情報 | 株式会社テックマニュファクチャリング</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .recruit-hero {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .recruit-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recruit-hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .job-list {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .job-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.2s;
+        }
+
+        .job-card:hover {
+            border-color: var(--color-accent);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .job-tag {
+            font-size: 0.8rem;
+            background-color: #f1f5f9;
+            color: var(--color-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-weight: 600;
+        }
+
+        .job-desc {
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+        }
+
+        .job-requirements {
+            margin-bottom: 1.5rem;
+        }
+
+        .job-requirements h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-secondary);
+        }
+
+        .job-requirements ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            color: var(--color-text-light);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">TECH MFG.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="products.html">製品情報</a></li>
+                    <li><a href="company.html">企業情報</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="recruit.html" class="active" style="color: var(--color-accent);">採用情報</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Recruit Hero -->
+    <div class="recruit-hero">
+        <div class="container">
+            <h1>Join Our Team</h1>
+            <p>技術で世界を変える挑戦を、私たちと一緒に。</p>
+        </div>
+    </div>
+
+    <!-- Message -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Message</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    テックマニュファクチャリングは、創業以来「技術で未来を創る」をミッションに掲げ、
+                    常に最先端の技術に挑戦し続けてきました。<br>
+                    私たちの製品は、世界中の工場で活躍し、人々の生活を支えています。<br>
+                    <br>
+                    これからの製造業は、単なる「モノづくり」から、
+                    IoTやAIを活用した「ソリューション提供」へと進化していきます。<br>
+                    変化を恐れず、新しい価値を創造できる仲間を募集しています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Open Positions</h2>
+            <div class="job-list">
+                <!-- Job 1 -->
+                <div class="job-card">
+                    <div class="job-title">
+                        ロボット制御エンジニア
+                        <span class="job-tag">正社員</span>
+                    </div>
+                    <p class="job-desc">
+                        産業用ロボットアームの制御ソフトウェア開発を担当していただきます。
+                        リアルタイムOS上でのC/C++プログラミング、モーションコントロールアルゴリズムの実装などを行います。
+                    </p>
+                    <div class="job-requirements">
+                        <h4>必須スキル</h4>
+                        <ul>
+                            <li>C/C++による組み込みソフトウェア開発経験（3年以上）</li>
+                            <li>制御工学の基礎知識</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline"
+                        style="border-color: var(--color-primary); color: var(--color-primary);">エントリーする</a>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-card">
+                    <div class="job-title">
+                        機械設計エンジニア
+                        <span class="job-tag">正社員</span>
+                    </div>
+                    <p class="job-desc">
+                        精密加工機や産業用ロボットの機構設計を担当していただきます。
+                        3D CADを用いた設計、強度解析、試作評価などを行います。
+                    </p>
+                    <div class="job-requirements">
+                        <h4>必須スキル</h4>
+                        <ul>
+                            <li>3D CAD（SolidWorks等）を使用した機械設計経験</li>
+                            <li>材料力学、機械力学の基礎知識</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline"
+                        style="border-color: var(--color-primary); color: var(--color-primary);">エントリーする</a>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job-card">
+                    <div class="job-title">
+                        IoTソリューション営業
+                        <span class="job-tag">正社員</span>
+                    </div>
+                    <p class="job-desc">
+                        製造業のお客様に対して、当社のIoT製品や生産管理システムを提案し、
+                        工場のスマート化を支援します。
+                    </p>
+                    <div class="job-requirements">
+                        <h4>必須スキル</h4>
+                        <ul>
+                            <li>法人営業経験（業界不問）</li>
+                            <li>ITまたは製造業に関する基礎知識</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline"
+                        style="border-color: var(--color-primary); color: var(--color-primary);">エントリーする</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><a href="index.html" style="color: inherit; text-decoration: none;">株式会社テックマニュファクチャリング</a></h4>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">
+                        〒100-0000<br>
+                        東京都千代田区大手町1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="products.html" style="color: inherit; text-decoration: none;">製品情報</a></h4>
+                    <ul>
+                        <li><a href="products.html?category=robot">産業用ロボット</a></li>
+                        <li><a href="products.html?category=precision">精密加工機</a></li>
+                        <li><a href="products.html?category=iot">IoTソリューション</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="company.html" style="color: inherit; text-decoration: none;">企業情報</a></h4>
+                    <ul>
+                        <li><a href="company.html#overview">会社概要</a></li>
+                        <li><a href="company.html#greeting">代表挨拶</a></li>
+                        <li><a href="company.html#history">沿革</a></li>
+                        <li><a href="company.html#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html" style="color: inherit; text-decoration: none;">お問い合わせ</a></h4>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li><a href="faq.html">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Tech Manufacturing Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

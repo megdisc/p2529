@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企業情報 | 株式会社テックマニュファクチャリング</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .company-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 4rem;
+        }
+
+        .company-table th,
+        .company-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        .company-table th {
+            width: 25%;
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: var(--color-secondary);
+        }
+
+        .history-list {
+            border-left: 2px solid #e2e8f0;
+            padding-left: 2rem;
+            margin-left: 1rem;
+        }
+
+        .history-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .history-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background-color: var(--color-accent);
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px var(--color-accent);
+        }
+
+        .history-year {
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .history-content {
+            color: var(--color-text);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">TECH MFG.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="products.html">製品情報</a></li>
+                    <li><a href="company.html" class="active" style="color: var(--color-accent);">企業情報</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Company</h1>
+            <p>企業情報</p>
+        </div>
+    </div>
+
+    <!-- Company Overview -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">会社概要</h2>
+            <table class="company-table">
+                <tr>
+                    <th>会社名</th>
+                    <td>株式会社テックマニュファクチャリング</td>
+                </tr>
+                <tr>
+                    <th>設立</th>
+                    <td>1985年4月1日</td>
+                </tr>
+                <tr>
+                    <th>代表者</th>
+                    <td>代表取締役社長 山田 太郎</td>
+                </tr>
+                <tr>
+                    <th>資本金</th>
+                    <td>1億円</td>
+                </tr>
+                <tr>
+                    <th>従業員数</th>
+                    <td>300名（2024年4月現在）</td>
+                </tr>
+                <tr>
+                    <th>本社所在地</th>
+                    <td>〒100-0000 東京都千代田区大手町1-1-1</td>
+                </tr>
+                <tr>
+                    <th>事業内容</th>
+                    <td>
+                        産業用ロボットの開発・製造・販売<br>
+                        精密加工機の開発・製造・販売<br>
+                        IoTソリューションの提供
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Greeting -->
+    <section id="greeting" class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">代表挨拶</h2>
+            <div style="display: flex; gap: 3rem; align-items: center; max-width: 900px; margin: 0 auto;">
+                <div style="flex: 0 0 200px; height: 200px; background-color: #cbd5e1; border-radius: 50%;"></div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-primary);">技術の力で、持続可能な未来へ。
+                    </h3>
+                    <p style="margin-bottom: 1rem;">
+                        私たちテックマニュファクチャリングは、創業以来、ものづくりの現場における課題解決に取り組んでまいりました。
+                        急速に変化する社会において、製造業が果たすべき役割はますます重要になっています。
+                    </p>
+                    <p>
+                        私たちは、最先端のロボティクス技術とIoTを融合させ、生産性の向上だけでなく、
+                        環境負荷の低減や働く人々のウェルビーイングにも貢献するソリューションを提供し続けます。
+                    </p>
+                    <p style="margin-top: 1.5rem; font-weight: 700;">
+                        代表取締役社長<br>
+                        山田 太郎
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="section">
+        <div class="container">
+            <h2 class="section-title">沿革</h2>
+            <div class="history-list">
+                <div class="history-item">
+                    <div class="history-year">2024年</div>
+                    <div class="history-content">新本社ビルへ移転</div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2020年</div>
+                    <div class="history-content">IoTソリューション事業部を設立</div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2015年</div>
+                    <div class="history-content">産業用ロボット「Alpha」シリーズ発売</div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2000年</div>
+                    <div class="history-content">ISO9001認証取得</div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">1985年</div>
+                    <div class="history-content">株式会社テックマニュファクチャリング設立</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access -->
+    <section id="access" class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">アクセス</h2>
+            <div
+                style="background-color: #e2e8f0; height: 400px; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: 600;">
+                Google Maps Placeholder
+            </div>
+            <p style="margin-top: 1rem; text-align: center;">
+                東京メトロ「大手町駅」直結
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><a href="index.html" style="color: inherit; text-decoration: none;">株式会社テックマニュファクチャリング</a></h4>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">
+                        〒100-0000<br>
+                        東京都千代田区大手町1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="products.html" style="color: inherit; text-decoration: none;">製品情報</a></h4>
+                    <ul>
+                        <li><a href="products.html?category=robot">産業用ロボット</a></li>
+                        <li><a href="products.html?category=precision">精密加工機</a></li>
+                        <li><a href="products.html?category=iot">IoTソリューション</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="company.html" style="color: inherit; text-decoration: none;">企業情報</a></h4>
+                    <ul>
+                        <li><a href="company.html#overview">会社概要</a></li>
+                        <li><a href="company.html#greeting">代表挨拶</a></li>
+                        <li><a href="company.html#history">沿革</a></li>
+                        <li><a href="company.html#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html" style="color: inherit; text-decoration: none;">お問い合わせ</a></h4>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li><a href="faq.html">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Tech Manufacturing Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

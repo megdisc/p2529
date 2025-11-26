@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくあるご質問 | 株式会社テックマニュファクチャリング</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8fafc;
+            color: var(--color-primary);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            transition: transform 0.2s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 500px;
+            /* Approximate max height */
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">TECH MFG.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="products.html">製品情報</a></li>
+                    <li><a href="company.html">企業情報</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>FAQ</h1>
+            <p>よくあるご質問</p>
+        </div>
+    </div>
+
+    <!-- FAQ List -->
+    <section class="section">
+        <div class="container faq-container">
+
+            <div class="faq-item">
+                <div class="faq-question">製品のカタログはどこからダウンロードできますか？</div>
+                <div class="faq-answer">
+                    各製品の詳細ページ、またはお問い合わせフォームからご請求いただけます。
+                    一部の製品については、会員登録後にPDFデータをダウンロード可能です。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">導入前の技術相談は可能ですか？</div>
+                <div class="faq-answer">
+                    はい、可能です。専門のエンジニアがお客様の課題をヒアリングし、最適なソリューションをご提案いたします。
+                    お問い合わせフォームより「技術的なご相談」を選択してご連絡ください。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">海外への発送は対応していますか？</div>
+                <div class="faq-answer">
+                    はい、対応しております。北米、欧州、アジアを中心にグローバルなサポート体制を整えております。
+                    詳細な対応エリアについてはお問い合わせください。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">採用の応募方法を教えてください。</div>
+                <div class="faq-answer">
+                    採用情報ページの各募集要項にある「エントリーする」ボタンから、お問い合わせフォームへ進み、
+                    必要事項をご記入の上ご応募ください。後日、担当者よりご連絡いたします。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">工場見学はできますか？</div>
+                <div class="faq-answer">
+                    法人のお客様を対象に、随時工場見学を受け付けております。
+                    ご希望の場合は、営業担当またはお問い合わせフォームよりお申し込みください。
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><a href="index.html" style="color: inherit; text-decoration: none;">株式会社テックマニュファクチャリング</a></h4>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">
+                        〒100-0000<br>
+                        東京都千代田区大手町1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="products.html" style="color: inherit; text-decoration: none;">製品情報</a></h4>
+                    <ul>
+                        <li><a href="products.html?category=robot">産業用ロボット</a></li>
+                        <li><a href="products.html?category=precision">精密加工機</a></li>
+                        <li><a href="products.html?category=iot">IoTソリューション</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="company.html" style="color: inherit; text-decoration: none;">企業情報</a></h4>
+                    <ul>
+                        <li><a href="company.html#overview">会社概要</a></li>
+                        <li><a href="company.html#greeting">代表挨拶</a></li>
+                        <li><a href="company.html#history">沿革</a></li>
+                        <li><a href="company.html#access">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4><a href="contact.html" style="color: inherit; text-decoration: none;">お問い合わせ</a></h4>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせフォーム</a></li>
+                        <li><a href="faq.html">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Tech Manufacturing Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple accordion logic for FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
